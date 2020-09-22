@@ -1,0 +1,97 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:#181818;
+}
+
+div, p, span, a, input, button {
+	box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+	text-decoration: none !important;
+    background-color: transparent;
+}
+
+
+.header {
+    background-color: #f5d10d;
+    height: 100vh;
+    position: relative;
+}
+
+.main-navbar {
+    margin-top: 20px;
+}
+
+.main-link a {
+    font-weight: 400;
+    font-size: 18px ;
+    color:#181818;
+    transition: 0.5s ease-in-out;
+}
+
+.main-link a:hover {
+    color: #000;
+}
+
+.main-phone {
+    font-weight: bold;
+    font-size: 19px;
+    color:#181818;
+    transition: 0.5s ease-in-out;
+}
+
+.main-phone:hover {
+    color: #000
+}
+
+.hero {
+    padding-top: 17%;
+}
+
+.main-title {
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.main-description {
+    padding-top: 25px;
+    padding-bottom: 45px;
+    font-size: 24px;
+    line-height: 140.7%;
+}
+
+.main-button {
+    font-weight: 600;
+    font-size: 22px;
+    color: #181818;
+    border: 3px solid #181818;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px 68px;
+    transition: 0.5s ease-in-out;
+}
+
+.main-button:hover {
+    background-color: #181818;
+    color: #f5d10d;
+}
+
+.main-hero img{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    height: 886px;
+}
+
+
