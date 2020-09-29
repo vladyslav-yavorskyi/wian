@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="row">
-                <nav class="navbar col-12 main-navbar">
+                <nav class="navbar col-12 main-navbar bgcolor ">
                     <div class="col-4">
-                        <a href="#" class="navbar-brand brand-img">
+                        <a href="#header" class="navbar-brand brand-img">
                             <img src="img/logo.png">
                         </a>  
                     </div>
                     <div class="col-6 main-link" >
-                        <a href="#" class="col-3">Главная</a>
-                        <a href="#" class="col-3">Услуги</a>
-                        <a href="#" class="col-3">Причины</a>
-                        <a href="#" class="col-3">Контакты</a>
+                        <a href="#header" class="col-3">Главная</a>
+                        <a href="#section-2" class="col-3">Услуги</a>
+                        <a href="#section-3" class="col-3">Причины</a>
+                        <a href="#section-6" class="col-3">Контакты</a>
                     </div>
                     <div class="col-2">
                         <a href="tel:+48 345 132 596" class="main-phone">
@@ -32,7 +32,6 @@
                 </nav> 
             </div>
         </div>
-        
         <div class="container">
             <div class="row">
                 <div class="col-7 hero">
@@ -42,7 +41,7 @@
                     <p class="main-description">
                         В нашем фирме получите комплексную помощь по легализации пребывания и работы иностранцев в Польше. 
                     </p>
-                    <a class="main-button ">
+                    <a class="main-button" id="main-button" href="#section-form">
                         Подробнее
                     </a>
                 </div>
@@ -52,7 +51,7 @@
             </div>
         </div>
     </header>
-    <section class="section-2">
+    <section class="section-2" id="section-2">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -71,7 +70,7 @@
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore eu fugiat nulla pariatur..
                                 </p>
-                                <a href="#" class="card-link">Подробнее</a>
+                                <a class="card-link" href="#section-form">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -85,7 +84,7 @@
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore eu fugiat nulla pariatur..
                                 </p>
-                                <a href="#" class="card-link ">Подробнее</a>
+                                <a class="card-link" href="#section-form">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -99,7 +98,7 @@
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore eu fugiat nulla pariatur..
                                 </p>
-                                <a href="#" class="card-link">Подробнее</a>
+                                <a class="card-link" id="card-link" href="#form">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -107,7 +106,7 @@
             </div>
         </div>
     </section>
-    <section class="section-3">
+    <section class="section-3" id="section-3">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -144,14 +143,14 @@
                 </div>
                 <div class="col-5">
                     <h1 class="fourth-title">Приключения Саши в Польше</h1>
-                    <p class="fourth-text">
+                    <p class="fourth-text" id="form">
                         Это первая часть юмористического сериала о Польше. Главному герою, Саше, нужно заработать денег, поэтому он решает поехать на заработки в Польшу... <br> <br>Созданием контента занимается фирма Wian.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-5">
+    <section class="section-5" id="section-form">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-12">
@@ -185,7 +184,7 @@
             </div>
         </div>
     </section>
-    <section class="section-6">
+    <section class="section-6" id="section-6">
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
@@ -222,13 +221,13 @@
             <div class="row">
                 <div class="col-4">
                    <div class="logo">
-                        <a href="#">
+                        <a href="#header">
                             <img src="img/footer-logo.svg">
                         </a>
                     </div> 
                 </div>
                 <div class="col-5 ">
-                    <div class="social-media d-flex justify-content-center">
+                    <div class=" d-flex justify-content-center">
                         <a class="col-3" href="https://www.instagram.com/polsha_prosto/"><img src="img/footer-instagram.svg"></a>
                         <a class="col-3" href="https://www.youtube.com/channel/UCMa3lnTif5Wl7G7-itWC96Q"><img src="img/footer-youtube.svg"></a>
                         <a class="col-3" href="https://www.facebook.com/"><img src="img/footer-facebook.svg"></a>
@@ -241,5 +240,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/nav.js"></script>
+
+
 </body>
 </html>
