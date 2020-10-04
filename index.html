@@ -2,41 +2,56 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Ie-content">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WIAN</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
     <header class="header" id="header">
-        <div class="container">
-            <div class="row">
-                <nav class="navbar col-12 main-navbar bgcolor ">
-                    <div class="col-4">
-                        <a href="#header" class="navbar-brand brand-img">
-                            <img src="img/logo.png">
-                        </a>  
-                    </div>
-                    <div class="col-6 main-link" >
-                        <a href="#header" class="col-3">Главная</a>
-                        <a href="#section-2" class="col-3">Услуги</a>
-                        <a href="#section-3" class="col-3">Причины</a>
-                        <a href="#section-6" class="col-3">Контакты</a>
-                    </div>
-                    <div class="col-2">
-                        <a href="tel:+48 345 132 596" class="main-phone">
-                            +48 345 132 596
-                        </a>
-                    </div>
-                </nav> 
+        <nav class="navbar navbar-expand-md fixed-top navbar-white bg-white p-3 shadow-sm p-3 mb-5 bg-white " >
+            <div class="container">
+                <a href="#header" class="navbar-brand brand-img">
+                    <img src="img/logo.png">
+                </a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars hamburger"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto main-link">
+                        <li class="nav-item">
+                            <a href="#header" class="nav-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#section-2" class="nav-link">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#section-3" class="nav-link">
+                                Причины
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#section-6" class="nav-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
         <div class="container">
             <div class="row">
-                <div class="col-7 hero">
+                <div class="col-lg-7 col-12 hero">
                     <h1 class="main-title">
-                        Рализация быстрее,</br> чем Вы думаете
+                        Рeализация быстрее,</br> чем Вы думаете
                     </h1>
                     <p class="main-description">
                         В нашем фирме получите комплексную помощь по легализации пребывания и работы иностранцев в Польше. 
@@ -44,9 +59,6 @@
                     <a class="main-button" id="main-button" href="#section-form">
                         Подробнее
                     </a>
-                </div>
-                <div class="main-hero">
-                    <img src="img/imghero(2).png">
                 </div>
             </div>
         </div>
@@ -60,7 +72,7 @@
                     </h1>
                 </div>
                 <div class="row cards">
-                    <div class="col-4">
+                    <div class="col-xl-4 col-md-6 col-12">
                         <div class="card">
                             <div class="card-body">
                                 <img src="img/logo.svg" >
@@ -74,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-xl-4 col-md-6 col-12 pt-4 pt-md-0">
                         <div class="card">
                             <div class="card-body">
                                 <img src="img/logo.svg" >
@@ -88,7 +100,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-xl-4 col-12 pt-4 pt-xl-0">
                         <div class="card">
                             <div class="card-body">
                                 <img src="img/logo.svg" >
@@ -98,7 +110,7 @@
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore eu fugiat nulla pariatur..
                                 </p>
-                                <a class="card-link" id="card-link" href="#form">Подробнее</a>
+                                <a class="card-link" id="card-link" href="#section-form">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -116,20 +128,20 @@
                 </div>
             </div>
             <div class="row third-arg">
-                <div class="col-3 arg">
-                    <img src="img/clock 1.svg" class="rounded mx-auto d-block" alt="" class="img-arg">
+                <div class="col-xl-3 col-md-6 arg">
+                    <img src="img/clock 1.svg" class="rounded mx-auto d-block" class="img-arg">
                     <h3 class="arg-title d-flex justify-content-center">Быстрые сроки </h3>
                 </div>
-                <div class="col-3 arg">
-                    <img src="img/agreement 1.svg" class="rounded mx-auto d-block" alt="" class="img-arg">
+                <div class="col-xl-3 col-md-6 pt-5 pt-md-0 arg">
+                    <img src="img/agreement 1.svg" class="rounded mx-auto d-block" class="img-arg">
                     <h3 class="arg-title d-flex justify-content-center">Индивидуальный подход </h3>
                 </div>
-                <div class="col-3 arg">
-                    <img src="img/quality 1.svg" class="rounded mx-auto d-block" alt="" class="img-arg">
+                <div class="col-xl-3 col-md-6 pt-5 pt-xl-0 arg">
+                    <img src="img/quality 1.svg" class="rounded mx-auto d-block" class="img-arg">
                     <h3 class="arg-title d-flex justify-content-center">Высочайшее качество</h3>
                 </div>
-                <div class="col-3 arg">
-                    <img src="img/support(1) 1.svg" class="rounded mx-auto d-block"  alt="" class="img-arg">
+                <div class="col-xl-3 col-md-6 pt-5 pt-xl-0 arg">
+                    <img src="img/support(1) 1.svg" class="rounded mx-auto d-block" class="img-arg">
                     <h3 class="arg-title d-flex justify-content-center">Первоклассный сервис</h3>
                 </div>
             </div>
@@ -138,10 +150,10 @@
     <section class="section-4">
         <div class="container">
             <div class="row iframe-video">
-                <div class="col-7">
+                <div class="col-xl-7 col-12">
                     <iframe class="col-12 rounded" height="380" src="https://www.youtube.com/embed/r1L-ZkZwi4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="col-5">
+                <div class="col-xl-5 col-12 pt-md-4 text-md-center">
                     <h1 class="fourth-title">Приключения Саши в Польше</h1>
                     <p class="fourth-text" id="form">
                         Это первая часть юмористического сериала о Польше. Главному герою, Саше, нужно заработать денег, поэтому он решает поехать на заработки в Польшу... <br> <br>Созданием контента занимается фирма Wian.
@@ -175,8 +187,8 @@
 							<div class="col-xl-12 form-group">
 								<input class="form-control form-control-lg " type="tel" id="tel" name="tel" placeholder="Ваш телефон/E-mail" required>
 							</div>
-							<div class="col-xl-10 d-flex justify-content-left justify-content-xl-left ">
-								<button class="form-btn">Відправити</button>
+							<div class="col-12">
+								<button type="button" class="form-btn btn-lg btn-block">Відправити</button>
 							</div>
 						</div>
 					</form>
@@ -192,19 +204,19 @@
                 </div>
             </div>
             <div class="row contacts">
-                <div class="col-4">
+                <div class="col-xl-4 col-12 ">
                     <div class="contact">
                         <img src="img/phone 1.svg" class="rounded mx-auto d-block" class="img-arg">
                         <span class="contact-title d-flex justify-content-center">+48 345 234 597</span>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4 col-12 pt-4 pt-xl-0">
                     <div class="contact">
                         <img src="img/address 1.svg" class="rounded mx-auto d-block" class="img-arg">
                         <span class="contact-title d-flex justify-content-center">ul. Fabryczna 14, 53-609 Wrocław</span>
                     </div>                   
                 </div>
-                <div class="col-4">
+                <div class="col-xl-4 col-12 pt-4 pt-xl-0">
                     <div class="contact">
                         <img src="img/email 1.svg" class="rounded mx-auto d-block" class="img-arg">
                         <span class="contact-title d-flex justify-content-center">wian@gmail.com</span>
@@ -219,31 +231,38 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-12 d-flex justify-content-center d-md-block justify-content-center ">
                    <div class="logo">
                         <a href="#header">
-                            <img src="img/footer-logo.svg">
+                            <img src="img/footer-images/footer-logo.svg">
                         </a>
                     </div> 
                 </div>
-                <div class="col-5 ">
-                    <div class=" d-flex justify-content-center">
-                        <a class="col-3" href="https://www.instagram.com/polsha_prosto/"><img src="img/footer-instagram.svg"></a>
-                        <a class="col-3" href="https://www.youtube.com/channel/UCMa3lnTif5Wl7G7-itWC96Q"><img src="img/footer-youtube.svg"></a>
-                        <a class="col-3" href="https://www.facebook.com/"><img src="img/footer-facebook.svg"></a>
-                        <a class="col-3" href="https://telegram.org/"><img src="img/footer-telegram.svg"></a>
+                <div class="col-md-5 col-12 pt-5 pt-md-0">
+                    <div class=" d-flex justify-content-center  social-media">
+                        <a class="col-3" href="https://www.instagram.com/polsha_prosto/"><img src="img/footer-images/footer-instagram.svg"></a>
+                        <a class="col-3" href="https://www.youtube.com/channel/UCMa3lnTif5Wl7G7-itWC96Q"><img src="img/footer-images/footer-youtube.svg"></a>
+                        <a class="col-3" href="https://www.facebook.com/"><img src="img/footer-images/footer-facebook.svg"></a>
+                        <a class="col-3" href="https://telegram.org/"><img src="img/footer-images/footer-telegram.svg"></a>
                     </div>
                 </div>
-                <div class="col-3">
-                    <a class="float-right footer-phone" href="tel:+48324234567">+48 345 132 596</a>
+                <div class="col-md-3 col-12 d-flex justify-content-center d-md-block justify-content-center pt-5 pt-md-0">
+                    <a class="float-md-right footer-phone" href="tel:+48324234567">+48 345 132 596</a>
                 </div>                
             </div>
         </div>
     </footer>
 
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/scroll.js"></script>
     <script src="scripts/nav.js"></script>
+    <script src="scripts/hamburger.js"></script>
 
 
 </body>

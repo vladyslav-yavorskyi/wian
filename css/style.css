@@ -12,6 +12,15 @@ h1, h2, h3, h4, h5, h6 {
     color:#181818;
 }
 
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+ul {
+    margin-bottom: 0 !important;
+}
+
+
+
 div, p, span, a, input, button {
 	box-sizing: border-box;
 }
@@ -23,29 +32,47 @@ a {
 }
 
 
-.header {
+#header {
     background-color: #f5d10d;
     height: 100vh;
     position: relative;
+    box-sizing: border-box;
+    background-image: url("../img/background-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+.navbar-content {
+    width: 100%;
+    background-color: #f5d10d;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .main-navbar {
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    height: 80px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.10);
 }
 
 .bgcolor.scrolled {
-
-
     transition: 0.35s ease-in-out;
-
 }
 
-.main-link a {
+.main-link {
+    display: flex;
+    float: right;
+}
+
+.main-link li {
+    padding-left: 20px;
+}
+
+.main-link li a {
     font-weight: 400;
     font-size: 18px ;
     color:#181818;
@@ -53,8 +80,7 @@ a {
 }
 
 .main-link a:hover {
-    color: #000;
-    border-bottom: 1px solid #181818;
+    color: #f5d10d;
 }
 
 .main-phone {
@@ -65,22 +91,36 @@ a {
 }
 
 .main-phone:hover {
-    color: #000
+    color: #f5d10d
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #181818;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+
+.hamburger:focus {
+    outline: none;
 }
 
 .hero {
-    padding-top: 17%;
+    padding: 25vh ;
 }
 
 .main-title {
     font-weight: bold;
-    font-size: 64px;
+    font-size: 61px;
 }
 
 .main-description {
     padding-top: 25px;
     padding-bottom: 45px;
-    font-size: 24px;
+    font-size: 25px;
     line-height: 140.7%;
 }
 
@@ -99,14 +139,6 @@ a {
     background-color: #181818;
     color: #f5d10d;
 }
-
-.main-hero img{
-    position: absolute;
-    bottom: 0;
-    right: 50px;
-    height: 886px;
-}
-
 
 /* SECTION 2 */
 
@@ -215,7 +247,7 @@ SECTION-3 */
 SECTION-5 */
 
 .section-5 {
-    margin: 130px 0;
+    padding: 130px 0 40px;
 }
 
 .fifth-title {
@@ -254,7 +286,7 @@ SECTION-5 */
     border: 3px solid #181818;
     box-sizing: border-box;
     border-radius: 5px;
-    padding: 12px 208px;
+    /* padding: 12px 208px; */
     transition: 0.5s ease-in-out;
 }
 
@@ -262,7 +294,9 @@ SECTION-5 */
     background-color: #181818;
     color: #f5d10d;
 }
-
+.section-6 {
+    padding-top: 90px;
+}
 .sixth-title {
     font-weight: bold;
     font-size: 64px;
@@ -292,6 +326,7 @@ SECTION-5 */
     margin-top: 130px;
     padding: 60px 0;
 }
+
 
 .footer-phone {
     font-weight: bold;
